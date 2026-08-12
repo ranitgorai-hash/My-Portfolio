@@ -790,7 +790,13 @@ summary:focus-visible {
 /* -------------------------------------------------------------------------
    Projects
    ------------------------------------------------------------------------- */
+.project-link--live {
+    color: var(--signal);
+}
 
+.project-link--live:hover {
+    color: var(--signal-bright);
+}
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
