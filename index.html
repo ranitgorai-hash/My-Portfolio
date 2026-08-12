@@ -3,25 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ranit | Portfolio</title>
-    <link rel="icon" type="image/jpg" href="icon.jpg">
-    
+    <title>Ranit Gorai | Portfolio</title>
+    <meta name="description" content="Ranit Gorai — Electronics & Telecommunication Engineering student at Jadavpur University, building across the hardware/software boundary: Verilog digital logic, full-stack PWAs, and DSA.">
+    <link rel="icon" type="image/jpg" href="assets/icon.jpg">
+
     <link rel="stylesheet" href="style.css">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
     <header id="header">
         <nav class="navbar">
-            <a href="#home" class="nav-logo">RG</a>
+            <a href="#home" class="nav-logo">
+                <span class="logo-mark">RG</span>
+                <span class="logo-text">ranit&middot;gorai</span>
+            </a>
             <ul class="nav-links">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -36,8 +41,38 @@
 
     <main>
         <section id="home" class="hero">
+
+            <svg class="hero-circuit" viewBox="0 0 1600 800" preserveAspectRatio="none" aria-hidden="true">
+                <path class="trace" d="M -20,180 L 260,180 L 260,60 L 620,60 L 620,340 L 980,340 L 980,150 L 1360,150 L 1360,420 L 1660,420" />
+                <path class="trace" d="M -20,520 L 340,520 L 340,700 L 760,700 L 760,480 L 1120,480 L 1120,640 L 1660,640" />
+                <path class="trace" d="M 1660,90 L 1300,90 L 1300,260 L 900,260 L 900,40 L 500,40 L 500,220 L -20,220" />
+                <circle class="pad" cx="260" cy="180" r="4.5" />
+                <circle class="pad" cx="260" cy="60" r="4.5" />
+                <circle class="pad" cx="620" cy="60" r="4.5" />
+                <circle class="pad" cx="620" cy="340" r="4.5" />
+                <circle class="pad" cx="980" cy="340" r="4.5" />
+                <circle class="pad" cx="980" cy="150" r="4.5" />
+                <circle class="pad" cx="1360" cy="150" r="4.5" />
+                <circle class="pad" cx="1360" cy="420" r="4.5" />
+                <circle class="pad" cx="340" cy="520" r="4.5" />
+                <circle class="pad" cx="340" cy="700" r="4.5" />
+                <circle class="pad" cx="760" cy="700" r="4.5" />
+                <circle class="pad" cx="760" cy="480" r="4.5" />
+                <circle class="pad" cx="1120" cy="480" r="4.5" />
+                <circle class="pad" cx="1120" cy="640" r="4.5" />
+                <circle class="pad" cx="1300" cy="90" r="4.5" />
+                <circle class="pad" cx="1300" cy="260" r="4.5" />
+                <circle class="pad" cx="900" cy="260" r="4.5" />
+                <circle class="pad" cx="900" cy="40" r="4.5" />
+                <circle class="pad" cx="500" cy="40" r="4.5" />
+                <circle class="pad" cx="500" cy="220" r="4.5" />
+                <circle class="pulse pulse--a" r="4" />
+                <circle class="pulse pulse--b" r="4" />
+                <circle class="pulse pulse--c" r="4" />
+            </svg>
+
             <div class="hero-content">
-                <p class="hero-eyebrow">Jadavpur University &middot; ETCE</p>
+                <p class="hero-eyebrow"><i class="fas fa-microchip"></i> Jadavpur University &middot; ETCE</p>
                 <h1 class="hero-title">Hi, I'm Ranit</h1>
                 <h2 class="hero-subtitle">An Aspiring <span class="typing-text"></span></h2>
                 <p class="hero-bio">I build things at the boundary of hardware and software &mdash; from Verilog logic circuits to full-stack, offline-first web apps &mdash; with a growing focus on data structures, algorithms, and clean system design.</p>
@@ -48,22 +83,68 @@
                 </div>
                 <div class="hero-actions">
                     <a href="#contact" class="btn btn-primary">Contact Me</a>
-                    <a href="#projects" class="btn btn-ghost">View Projects</a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
                 </div>
             </div>
+
+            <div class="scroll-cue"><span>Scroll</span><span class="line"></span></div>
         </section>
 
         <section id="about" class="about-section content-section">
             <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">01 &middot; About</p>
+                    <h2 class="section-title">Where circuits meet <span class="accent">code</span></h2>
+                </div>
                 <div class="about-content">
-                    <div class="about-image">
-                        <img src="Ranit_Pic.png" alt="Ranit Gorai Professional Photo">
+                    <div>
+                        <div class="about-image-frame">
+                            <div class="about-image">
+                                <img src="assets/Ranit_Pic.png" alt="Ranit Gorai Professional Photo">
+                            </div>
+                        </div>
+                        <p class="about-caption">RANIT GORAI // ETCE, JADAVPUR UNIVERSITY</p>
                     </div>
                     <div class="about-text">
-                        <h2 class="section-title">About Me</h2>
-                        <p>I'm a student at Jadavpur University specializing in Electronics and Telecommunication, with academic grounding in digital systems and a self-driven track record in software: full-stack web apps, data structures & algorithms, and competitive programming.</p>
-                        <p>Recently, I spent time at the CRIS Lab, IISc Bangalore, analyzing protocol design for secure multi-party computation &mdash; work that earned an invitation to Google's GSEC India Research Day.</p>
-                        <a href="Ranit_Software_CV.pdf" target="_blank" class="btn btn-secondary">Download CV</a>
+                        <p>I'm a student at Jadavpur University specializing in <strong>Electronics and Telecommunication</strong>, with academic grounding in digital systems and a self-driven track record in software: full-stack web apps, data structures &amp; algorithms, and competitive programming.</p>
+                        <p>Recently, I spent time at the <strong>CRIS Lab, IISc Bangalore</strong>, analyzing protocol design for secure multi-party computation &mdash; work that earned an invitation to Google's GSEC India Research Day.</p>
+                        <div class="about-actions">
+                            <div class="cv-dropdown">
+                                <details class="cv-details">
+                                    <summary class="btn btn-primary">Download CV</summary>
+                                    <div class="cv-options">
+                                        <a href="assets/Ranit_software_cv.pdf" target="_blank" class="cv-option">
+                                            <i class="fas fa-laptop-code"></i> Software CV
+                                        </a>
+                                        <a href="assets/Ranit_ETCE_CV.pdf" target="_blank" class="cv-option">
+                                            <i class="fas fa-microchip"></i> Electronics CV
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="research-section content-section alt-bg">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">02 &middot; Research</p>
+                    <h2 class="section-title">Signal, before it becomes <span class="accent">software</span></h2>
+                    <p class="section-sub">A short detour into research &mdash; where the same systems thinking applies at the protocol level.</p>
+                </div>
+                <div class="research-card">
+                    <div class="research-node">
+                        <span class="dot"></span>
+                        <span class="stem"></span>
+                    </div>
+                    <div class="research-body">
+                        <h3>Secure Multi-Party Computation &mdash; Protocol Analysis</h3>
+                        <p class="research-org">CRIS Lab, Indian Institute of Science (IISc) Bangalore</p>
+                        <p>Analyzed protocol design for secure multi-party computation, examining how systems can jointly compute over private inputs without exposing them &mdash; the same instinct for boundaries and clean interfaces that shows up in circuit design and system architecture.</p>
+                        <span class="research-badge"><i class="fas fa-award"></i> Invited to Google's GSEC India Research Day</span>
                     </div>
                 </div>
             </div>
@@ -71,29 +152,72 @@
 
         <section id="skills" class="skills-section content-section">
             <div class="container">
-                <h2 class="section-title">My Technical Skills</h2>
+                <div class="section-head">
+                    <p class="eyebrow">03 &middot; Skills</p>
+                    <h2 class="section-title">The stack, <span class="accent">layer by layer</span></h2>
+                </div>
                 <div class="skills-grid">
-                    <div class="skill-card"><i class="fas fa-code"></i><span>C/C++</span></div>
-                    <div class="skill-card"><i class="fab fa-python"></i><span>Python</span></div>
-                    <div class="skill-card"><i class="fab fa-react"></i><span>React</span></div>
-                    <div class="skill-card"><i class="fab fa-js-square"></i><span>TypeScript</span></div>
-                    <div class="skill-card"><i class="fab fa-html5"></i><span>HTML</span></div>
-                    <div class="skill-card"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
-                    <div class="skill-card"><i class="fas fa-bolt"></i><span>Vite</span></div>
-                    <div class="skill-card"><i class="fas fa-sitemap"></i><span>Data Structures & Algorithms</span></div>
-                    <div class="skill-card"><i class="fas fa-database"></i><span>SQL & DBMS</span></div>
-                    <div class="skill-card"><i class="fab fa-git-alt"></i><span>Git & GitHub</span></div>
-                    <div class="skill-card"><i class="fas fa-mobile-screen-button"></i><span>PWA</span></div>
-                    <div class="skill-card"><i class="fas fa-microchip"></i><span>Verilog HDL</span></div>
-                    <div class="skill-card"><i class="fas fa-cogs"></i><span>Multisim</span></div>
-                    <div class="skill-card"><i class="fab fa-latex"></i><span>LaTeX</span></div>
+
+                    <div class="skill-module">
+                        <div class="skill-module-head">
+                            <h3>Languages</h3>
+                            <span class="skill-module-id">MOD_01</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><i class="fas fa-code"></i>C/C++</span>
+                            <span class="skill-tag"><i class="fab fa-python"></i>Python</span>
+                            <span class="skill-tag"><i class="fab fa-js-square"></i>TypeScript</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-module">
+                        <div class="skill-module-head">
+                            <h3>Frontend &amp; Tools</h3>
+                            <span class="skill-module-id">MOD_02</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><i class="fab fa-react"></i>React</span>
+                            <span class="skill-tag"><i class="fab fa-html5"></i>HTML</span>
+                            <span class="skill-tag"><i class="fab fa-css3-alt"></i>CSS</span>
+                            <span class="skill-tag"><i class="fas fa-bolt"></i>Vite</span>
+                            <span class="skill-tag"><i class="fab fa-git-alt"></i>Git &amp; GitHub</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-module">
+                        <div class="skill-module-head">
+                            <h3>Systems &amp; Data</h3>
+                            <span class="skill-module-id">MOD_03</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><i class="fas fa-sitemap"></i>Data Structures &amp; Algorithms</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i>SQL &amp; DBMS</span>
+                            <span class="skill-tag"><i class="fas fa-mobile-screen-button"></i>PWA</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-module">
+                        <div class="skill-module-head">
+                            <h3>Hardware &amp; EDA</h3>
+                            <span class="skill-module-id">MOD_04</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><i class="fas fa-microchip"></i>Verilog HDL</span>
+                            <span class="skill-tag"><i class="fas fa-cogs"></i>Multisim</span>
+                            <span class="skill-tag"><i class="fab fa-latex"></i>LaTeX</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="projects-section content-section">
+        <section id="projects" class="projects-section content-section alt-bg">
             <div class="container">
-                <h2 class="section-title">My Projects</h2>
+                <div class="section-head">
+                    <p class="eyebrow">04 &middot; Projects</p>
+                    <h2 class="section-title">Things I've <span class="accent">built</span></h2>
+                </div>
                 <div class="projects-grid">
 
                     <div class="project-card project-card--software">
@@ -103,7 +227,7 @@
                                 <div class="visual-body">
                                     <div class="visual-stat">
                                         <span class="visual-stat-label">This month</span>
-                                        <span class="visual-stat-value">₹18,240</span>
+                                        <span class="visual-stat-value">&#8377;18,240</span>
                                     </div>
                                     <div class="visual-bars">
                                         <span style="--h:35%"></span>
@@ -116,6 +240,7 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="project-pins"><span></span><span></span><span></span><span></span><span></span><span></span></div>
                         <div class="project-info">
                             <span class="project-tag project-tag--software">Software &middot; PWA</span>
                             <h3 class="project-title">Expense Manager &mdash; Local-First PWA</h3>
@@ -128,13 +253,14 @@
                                 <span>Vite</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/ranitgorai-hash/expense-manager-pwa" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://github.com/ranitgorai-hash/Expense-Manager" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="project-card project-card--hardware">
-                        <img src="Digital Logic Circuits Design.jpg" alt="Digital logic circuit schematic" class="project-image">
+                        <img src="assets/Digital Logic Circuits Design.jpg" alt="Digital logic circuit schematic" class="project-image">
+                        <div class="project-pins"><span></span><span></span><span></span><span></span><span></span><span></span></div>
                         <div class="project-info">
                             <span class="project-tag project-tag--hardware">Hardware &middot; Verilog</span>
                             <h3 class="project-title">Digital Logic Circuits Design</h3>
@@ -157,15 +283,36 @@
 
     <footer id="contact" class="footer">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> <a href="mailto:ranitgorai2005@gmail.com">ranitgorai2005@gmail.com</a></p>
-                <p><i class="fas fa-phone"></i> <a href="tel:+917866069561">+91-7866069561</a></p>
+            <div class="section-head">
+                <p class="eyebrow">05 &middot; Contact</p>
+                <h2 class="section-title">Let's <span class="accent">connect</span></h2>
+                <p class="section-sub">Open to internships, research collaborations, and interesting problems in general.</p>
             </div>
+
+            <div class="contact-terminals">
+                <div class="terminal">
+                    <span class="terminal-icon"><i class="fas fa-envelope"></i></span>
+                    <span>
+                        <span class="terminal-label">Pin 1 &middot; Email</span>
+                        <a href="mailto:ranitgorai2005@gmail.com">ranitgorai2005@gmail.com</a>
+                    </span>
+                </div>
+                <div class="terminal">
+                    <span class="terminal-icon"><i class="fas fa-phone"></i></span>
+                    <span>
+                        <span class="terminal-label">Pin 2 &middot; Phone</span>
+                        <a href="tel:+917866069561">+91 78660 69561</a>
+                    </span>
+                </div>
+            </div>
+
             <div class="footer-socials">
                 <a href="https://www.linkedin.com/in/ranit-gorai-434a20296" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/ranitgorai-hash" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://leetcode.com/u/sgranit/" target="_blank" aria-label="LeetCode"><i class="fas fa-code"></i></a>
             </div>
+
+            <p class="copyright">&copy; <span id="year"></span> Ranit Gorai &middot; <span>assembled, not just deployed</span></p>
         </div>
     </footer>
 

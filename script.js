@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+    // ======== Footer Year ========
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
     // ======== Navbar Scroll Effect ========
     const header = document.getElementById('header');
     window.addEventListener('scroll', () => {
